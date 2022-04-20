@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+:root {
+	--light-blue: #66E2DC;
+	--light-red: #FA7453;
+	--light-orange: #FFB964;
+	--white: #FCFAF9;
+	--black: #191826;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+}
+
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+.heading-1 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	line-height: 1.2em;
+	letter-spacing: -0.45px;
+	margin-bottom: 1.25rem;
+}
+
+.heading-2 {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	line-height: 1.25em;
+	color: var(--white);
+	margin-bottom: 0.375em;
+}
+
+
+.body-header {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.625em;
+}
+
+.body-feature {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.125em;
+	font-weight: 400;
+	line-height: 1.56em;
+	color:  var(--white);
+	margin-bottom: 2em;
+}
+
+.price {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 4.0625em;
+	font-weight: 700;
+	line-height: 0.8em;
+	color:  var(--white);
+	margin-bottom: 0.4923em;
+}
+
+.pay-frequency {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.6rem;
+	letter-spacing: -0.2px;
+	color:  var(--white);
+}
+
+.button {
+	display: flex;
+	padding: 0.778em;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1.125em;
+	font-weight: 700;
+	line-height: 1.778em;
+	letter-spacing: -0.18px;
+	text-decoration: none;
+	color: var(--white);
+	border-radius: 1rem;
+	justify-content: center;
+}
+
+.button:hover {
+	transition: all 0.200s;
+}
+.button div {
+	display: flex;
+	align-self: center;	
+}
+
+.button-apple {
+	background: var(--black);
+	margin-bottom: 1rem;
+}
+.button-apple:hover {
+	background: var(--light-blue);
+}
+
+.button-android {
+	background: var(--white);
+	color: var(--black);
+}
+
+.button-android:hover {
+	background: var(--light-orange);
+}
+
+.button-icon {
+	padding-right: 8px;
+}
+
+.section-header {
+	background: bottom url(../img/bg-main-mobile.png);
+	background-position: 30px -280px;
+	padding-top: 40px;
+	display: flex;
+	height: 614px;
+}
+
+/* 
+.bg-pattern-1 {
+	display: none;
+}
+*/
+
+.container {
+	padding: 0 1.5rem;
+	width: 100%;
+}
+
+.logo {
+	margin-bottom: 4rem;
+}
+
+.section-app {
+}
+
+.section-app .container {
+	padding: 0;
+}
+
+.illustration-background {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.illustration-app {
+	width: 209px;
+	height: 430px;
+	margin-top: -100px;
+	margin-bottom: 50px;
+}
+
+.illustration-background {
+	height: 420px;
+	width: 100%;
+	background: var(--black) center / contain no-repeat url(../img/bg-pattern-2.svg);
+	border-radius: 1rem;
+}
+
+.app-feature {
+	background: var(--light-red);
+	padding: 3rem 2.25rem;
+	border-radius: 1rem;
+}
+
+.footer {
+	margin-top: 570px;
+	margin-bottom: 51px;
+}
+
+.logo-footer {
+	margin-bottom: 1.4rem;
+}
+
+.wrapper-footer-txt {
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.625em;
+	margin-bottom: 4rem;
+}
+
+.wrapper-footer-icons {
+	width: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 29px;
+}
+
+.wrapper-footer-icons a {
+	text-decoration: none;
+}
+
+.icon-social {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.icon-fb {
+	background-image: url(../img/icon-facebook.svg);
+	transition: all 0.200s;
+}
+.icon-insta {
+	background-image: url(../img/icon-instagram.svg);
+	transition: all 0.200s;
+}
+.icon-twit {
+	background-image: url(../img/icon-twitter.svg);
+	transition: all 0.200s;
+}
+
+.icon-fb:hover {
+	background-image: url(../img/icon-facebook--hover.svg);
+}
+.icon-insta:hover {
+	background-image: url(../img/icon-instagram--hover.svg);
+}
+.icon-twit:hover {
+	background-image: url(../img/icon-twitter--hover.svg);
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0 2.4375rem;
+	}
+	.section-header {
+		background: url(../img/bg-pattern-1.svg) no-repeat 107% -10% / 267px, url(../img/bg-main-tablet.png) no-repeat 75% 75%;
+		height: 770px;
+		padding-top: 3.875rem;
+	}
+	.logo {
+		margin-bottom: 5.9375rem;
+	}
+
+	.heading-wrapper {
+		width: 520px;
+	}
+	.heading-1 {
+		font-size: 4em;
+		line-height: 1em;
+		letter-spacing: -0.73px;
+		margin-bottom: 1.75rem;
+	}
+	.heading-2 {
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+	.body-header {
+		font-size: 1.125em;
+		line-height: 1.556em;
+	}
+	.section-app .container {
+		padding: 0 2.4375rem;
+	}
+	.illustration-background {
+		display: flex;
+		flex-direction: row;
+		height: 600px;
+		background: var(--black) url(../img/bg-pattern-2.svg) 55% -15% / 280px no-repeat;
+		align-items: normal;
+		justify-content: space-between;
+	}
+	.illustration-app {
+		width: 270.21px;
+		height: 556px;
+		margin-top: -138px;
+		margin-left: 64px;
+		margin-bottom: 50px;
+	}
+	.app-feature {
+		padding: 3rem 3rem;
+		margin-left: -108px;
+		margin-right: 58px;
+		margin-top: 145px;
+		width: 400px;
+		height: 546px;
+	}
+	.footer {
+		margin-top: 183px;
+	}
+	.footer .container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media (min-width: 1200px) {
+	.section-header {
+		background: url(../img/bg-pattern-1.svg) no-repeat 100% -10% / 312px, url(../img/bg-main-desktop.png) no-repeat 50% 20%;
+		height: 860px;
+		padding-top: 3.875rem;
+	}
+	.container {
+		padding: 0 10.3125rem;
+	}
+	.logo {
+		margin-bottom: 8rem;
+	}
+	.heading-wrapper {
+		width: 78%;
+	}
+	.heading-1 {
+		font-size: 5.5em;
+		line-height: 1em;
+		letter-spacing: -1px;
+		margin-bottom: 2.375rem;
+	}
+	.body-header {
+		font-size: 1.25em;
+		line-height: 1.7em;
+	}
+	.section-app .container {
+		padding: 0 10.3125rem;
+	}
+	.illustration-app {
+		width: 312px;
+		height: 642px;
+		margin-top: -213px;
+		margin-left: 103px;
+		margin-bottom: 50px;
+	}
+	.heading-2 {
+		font-size:2.5em;
+		line-height: 1.3em;
+		margin-bottom: 0.55em;
+	}
+	.body-feature {
+		font-size: 1.25em;
+		line-height: 1.7em;
+		margin-bottom: 1.95em;
+	}
+	.app-feature {
+		padding: 3.375rem 3.625rem;
+		margin-left: -108px;
+		margin-right: 95px;
+		margin-top: 90px;
+		width: 446px;
+		height: 625px;
+	}
+	.illustration-background {
+		background: var(--black) url(../img/bg-pattern-2.svg) 42.2% -30% / 312px no-repeat;
+	}
+	.footer {
+		margin-top: 202px;
+	}
+	.logo-footer {
+		margin-right: 8.625rem;
+		margin-bottom: 3.825rem;
+	}
+	.wrapper-footer-txt {
+		display: flex;
+	}
+	.info-contact {
+		width: 366px;
+	}
+}
